@@ -1,0 +1,228 @@
+﻿[2024.08.18 10:10:27.409 instance] hello!
+    application: "veadotube mini" (type "mini", version "2.0a")
+    instance id: mini-08dcbf6dfba5edce-00004734
+    args: (none)
+    system: Windows x64
+    debug build: False
+    executable: "C:\Users\user\Desktop\veadotube-mini-win-x64\veadotube_mini.exe"
+    lib folder: "lib/"
+    app folder: "C:\Users\user\Desktop\veadotube-mini-win-x64"
+    user folder: "C:\Users\user\.veadotube"
+[2024.08.18 10:10:27.479 user data] loaded WindowData with UserDataFileAgent (mini/window.yaml)
+[2024.08.18 10:10:27.622 win32] "dx11" backend init success
+[2024.08.18 10:10:27.623 win/ime] locale: 00000419
+[2024.08.18 10:10:27.623 win/ime] api file name: ""
+[2024.08.18 10:10:27.623 win/ime] api GetReadingString: False
+[2024.08.18 10:10:27.623 win/ime] api ShowReadingWindow: False
+[2024.08.18 10:10:27.623 win/ime] ime is ready
+[2024.08.18 10:10:27.628 dx11] creating shaders...
+    vert Fill(0) -> success
+    frag Fill(0) -> success
+    vert FixAlpha(0) -> success
+    frag FixAlpha(0) -> success
+    vert MiniCustomSlider(0) -> success
+    frag MiniCustomSlider:ColorHue(0) -> success
+    frag MiniCustomSlider:ColorSaturation(0) -> success
+    frag MiniCustomSlider:ColorValue(0) -> success
+    vert MiniEffectsPreview(0) -> success
+    frag MiniEffectsPreview(0) -> success
+    vert MiniImagePreview(0) -> success
+    frag MiniImagePreview(0) -> success
+    vert MiniStateFrame(0) -> success
+    frag MiniStateFrame(0) -> success
+    vert MiniVolumeSlider(0) -> success
+    frag MiniVolumeSlider(0) -> success
+    vert Quad(0) -> success
+    vert Quad(1) -> success
+    vert Quad:Multiple(0) -> success
+    vert Quad:Multiple(1) -> success
+    frag Quad(0) -> success
+    frag Quad:Texture(0) -> success
+    frag Quad:Texture(1) -> success
+    frag Quad:TextureShade(0) -> success
+    frag Quad:TextureShade(1) -> success
+    frag Quad:Red(0) -> success
+    frag Quad:SDF(0) -> success
+    frag Quad:SDF2(0) -> success
+    vert RoundRect(0) -> success
+    frag RoundRect(0) -> success
+    frag RoundRect:Multiply(0) -> success
+    vert Line(0) -> success
+    frag Line(0) -> success
+    vert OutputFrame:Src1(0) -> success
+    vert OutputFrame:Src1(1) -> success
+    frag OutputFrame:Copy(0) -> success
+    frag OutputFrame:Blend(0) -> success
+    frag OutputFrame:Unmultiply(0) -> success
+    frag OutputFrame:UnmultiplyGrid(0) -> success
+    frag OutputFrame:Opacity(0) -> success
+    frag OutputFrame:OpacityNoise(0) -> success
+    frag OutputFrame:DropShadow(0) -> success
+    frag OutputFrame:MiniFadeDown(0) -> success
+[2024.08.18 10:10:27.919 modules] loading VeadoTube.Text.Fonts
+[2024.08.18 10:10:28.165 fonts] loaded from assets:
+    Default: 4 font(s)
+    Display: 2 font(s)
+    Mono: 2 font(s)
+    ...with 21 fallback font(s)!
+[2024.08.18 10:10:28.165 modules] loaded VeadoTube.Text.Fonts
+[2024.08.18 10:10:28.165 modules] loading VeadoTube.Text.Emoji
+[2024.08.18 10:10:28.317 modules] loaded VeadoTube.Text.Emoji
+[2024.08.18 10:10:28.317 modules] loading VeadoTube.Data.AddOn
+[2024.08.18 10:10:28.318 add-on] no add-ons found
+[2024.08.18 10:10:28.319 modules] loaded VeadoTube.Data.AddOn
+[2024.08.18 10:10:28.319 modules] loading VeadoTube.Text.Language
+[2024.08.18 10:10:28.321 language] available languages:
+    en: English
+    es: español
+    pt: português
+[2024/08/18 10:10:28.323 language] current language: en: English
+[2024/08/18 10:10:28.323 modules] loaded VeadoTube.Text.Language
+[2024/08/18 10:10:28.323 modules] loading VeadoTube.Nodes.Module
+[2024/08/18 10:10:28.325 nodes] available usages:
+    volume() -> (Num)
+    voiceActivity() -> (Bool)
+    audio() -> (Audio)
+    audio.newSamples() -> (Num)
+    bitmap() -> (Bitmap)
+    neural.silerovad() -> (Num, Num)
+    neural.ovrlipsync.viseme() -> (String)
+    neural.ovrlipsync.visemeScore(String) -> (Num)
+    neural.ovrlipsync.laughter() -> (Num)
+    number() -> (Num)
+    number2() -> (Num2)
+    unit() -> (Num)
+    realUnit() -> (Num)
+    point() -> (Num2)
+    boolean() -> (Bool)
+    string() -> (String)
+    state() -> (String)
+    color() -> (Color)
+    input.mouse(Num) -> (Bool)
+    input.keyboard(String) -> (Bool)
+    input.keyboard.all() -> (String)
+    input.gamepad.button(String) -> (Bool)
+    input.gamepad.buttonNum(String) -> (Num)
+    input.gamepad.stick(String) -> (Num2)
+    input.midi.note(Num) -> (Bool)
+    input.midi.noteVelocity(Num) -> (Num)
+    input.midi.controller(Num) -> (Num)
+    input.midi.pitchWheel() -> (Num)
+    stateStackEvents() -> (StateStackEvents)
+[2024/08/18 10:10:28.325 nodes] available nodes:
+    constant.number (number)
+    constant.boolean (boolean)
+    ipc.stateEvents (stateStackEvents)
+    input.microphone (audio)
+    input.webcam (bitmap)
+    voiceActivityOutput (voiceActivity)
+    neural.silerovad (neural.silerovad)
+    neural.ovrlipsync (neural.ovrlipsync)
+    neural.silerovad::silence (unit)
+    neural.silerovad::activity (unit)
+    neural.ovrlipsync::viseme (state)
+    neural.ovrlipsync::visemeScore (unit)
+    neural.ovrlipsync::laughter (unit)
+    input.cursor (point)
+    input.mouse (input.mouse)
+    input.keyboard (input.keyboard)
+    input.gamepad (input.gamepad)
+    input.midi (input.midi)
+    input.mouse::button (boolean)
+    input.keyboard::key (boolean)
+    input.gamepad::button (boolean, unit)
+    input.gamepad::stick (point)
+    input.midi::note (boolean, unit)
+    input.midi::controller (unit)
+    input.midi::pitchWheel (realUnit)
+    state.stack (state)
+    state.signalEvents (stateStackEvents)
+[2024/08/18 10:10:28.325 modules] loaded VeadoTube.Nodes.Module
+[2024/08/18 10:10:28.325 modules] loading VeadoTube.IPC
+[2024/08/18 10:10:28.326 modules] loaded VeadoTube.IPC
+[2024/08/18 10:10:28.329 user data] loaded DataFile with UserDataFileAgent (mini/data.yaml)
+[2024/08/18 10:10:28.333 mini data] loaded data file from version 2.0a
+[2024/08/18 10:10:28.333 mini data] attempting to load avatar from autosave
+[2024/08/18 10:10:28.343 user data] loaded VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/18 10:10:28.347 mini data] avatar loaded
+[2024/08/18 10:10:28.366 nodes] agent of type StateStackAgent is enabled
+[2024/08/18 10:10:28.367 nodes] agent of type IPCStateEventsAgent is enabled
+[2024/08/18 10:10:28.368 nodes] agent of type MicrophoneWASAPIAgent is enabled
+[2024/08/18 10:10:28.370 node graph] rebuild graph components: 0.12860 ms
+[2024/08/18 10:10:28.370 nodes] agent of type SignalStateEventsAgent is enabled
+[2024/08/18 10:10:28.372 nodes] agent of type ConstantNumberAgent is enabled
+[2024/08/18 10:10:28.373 nodes] agent of type VoiceActivityOutputAgent is enabled
+[2024/08/18 10:10:28.373 node graph] rebuild node instances: 3.09710 ms
+[2024/08/18 10:10:28.376 wasapi] created enumerator
+[2024/08/18 10:10:28.377 wasapi] updating endpoint list
+[2024/08/18 10:10:28.379 ipc] serving at 127.0.0.1:49329
+[2024/08/18 10:10:28.392 node graph] rebuild node instances: 0.09460 ms
+[2024/08/18 10:10:28.392 wasapi] Микрофон (Realtek(R) Audio): new id is {0.0.1.00000000}.{87ac4758-7420-418d-b9fc-b66f2faa5c7f}
+[2024/08/18 10:10:28.392 wasapi] Микрофон (Realtek(R) Audio): created device
+[2024/08/18 10:10:28.394 wasapi] Микрофон (Realtek(R) Audio): created audio client
+[2024/08/18 10:10:28.394 wasapi] Микрофон (Realtek(R) Audio): mix format: FFFE, 2 ch, 48000 hz, 32 bpsample, 384000 bpsec, align 8
+    KSDATAFORMAT_SUBTYPE_IEEE_FLOAT, ch mask 0-1, 32 samples/block or bits/sample
+[2024/08/18 10:10:28.395 wasapi] Микрофон (Realtek(R) Audio): attempting compatibility (1 of 3): ok!
+    raw format: 0003, 2 ch, 48000 hz, 32 bpsample, 384000 bpsec, align 8
+[2024/08/18 10:10:28.395 wasapi] Микрофон (Realtek(R) Audio): chosen format: ch(Left, Right), 48000 hz, Float32LR
+[2024/08/18 10:10:28.411 wasapi] Микрофон (Realtek(R) Audio): initialized client
+[2024/08/18 10:10:28.411 wasapi] Микрофон (Realtek(R) Audio): fetched buffer size: 1056
+[2024/08/18 10:10:28.411 wasapi] Микрофон (Realtek(R) Audio): event handle is set
+[2024/08/18 10:10:28.411 wasapi] Микрофон (Realtek(R) Audio): created capture client
+[2024/08/18 10:10:28.412 wasapi] Микрофон (Realtek(R) Audio): started capture
+[2024/08/18 10:10:28.412 wasapi] Микрофон (Realtek(R) Audio): starting task
+[2024/08/18 10:10:29.217 text parser] reloading strings
+[2024/08/18 10:10:29.217 text files] reading en files from assets (3 file(s))
+[2024/08/18 10:10:29.218 yaml] deserialization took 0.3845 ms
+[2024/08/18 10:10:29.219 yaml] deserialization took 0.2103 ms
+[2024/08/18 10:10:29.219 yaml] deserialization took 0.2124 ms
+[2024/08/18 10:10:29.219 text files] reading en files from assets (3 file(s))
+[2024/08/18 10:10:29.219 yaml] deserialization took 0.1948 ms
+[2024/08/18 10:10:29.219 yaml] deserialization took 0.0477 ms
+[2024/08/18 10:10:29.219 yaml] deserialization took 0.0659 ms
+[2024/08/18 10:10:36.496 user data] saving WindowData with UserDataFileAgent (mini/window.yaml)
+[2024/08/18 10:10:36.496 yaml] serialization took 0.2959 ms
+[2024/08/18 10:10:36.543 user data] save: success; WindowData with UserDataFileAgent (mini/window.yaml)
+[2024/08/18 10:10:54.526 user data] saving WindowData with UserDataFileAgent (mini/window.yaml)
+[2024/08/18 10:10:54.526 yaml] serialization took 0.0446 ms
+[2024/08/18 10:10:54.559 user data] save: success; WindowData with UserDataFileAgent (mini/window.yaml)
+[2024/08/18 10:11:01.150 user data] saving WindowData with UserDataFileAgent (mini/window.yaml)
+[2024/08/18 10:11:01.150 yaml] serialization took 0.0293 ms
+[2024/08/18 10:11:01.169 user data] save: success; WindowData with UserDataFileAgent (mini/window.yaml)
+[2024/08/18 10:11:16.599 user data] saving WindowData with UserDataFileAgent (mini/window.yaml)
+[2024/08/18 10:11:16.600 yaml] serialization took 0.0802 ms
+[2024/08/18 10:11:16.638 user data] save: success; WindowData with UserDataFileAgent (mini/window.yaml)
+[2024/08/18 10:11:30.033 user data] saving WindowData with UserDataFileAgent (mini/window.yaml)
+[2024/08/18 10:11:30.033 yaml] serialization took 0.0283 ms
+[2024/08/18 10:11:30.050 user data] save: success; WindowData with UserDataFileAgent (mini/window.yaml)
+[2024/08/18 10:13:01.417 nodes] agent of type VeadoTube.Nodes.InternalDefinitions.StateStackAgent is disabled
+[2024/08/18 10:13:01.417 nodes] agent of type VeadoTube.Nodes.InternalDefinitions.IPCStateEventsAgent is disabled
+[2024/08/18 10:13:01.417 user data] unloaded VeadoFile:autosave
+[2024/08/18 10:13:01.417 user data] unloaded DataFile
+[2024/08/18 10:13:01.417 modules] unloading VeadoTube.IPC
+[2024/08/18 10:13:01.483 ipc] not serving
+[2024/08/18 10:13:01.483 modules] unloaded VeadoTube.IPC
+[2024/08/18 10:13:01.483 modules] unloading VeadoTube.Nodes.Module
+[2024/08/18 10:13:01.483 nodes] agent of type VeadoTube.Nodes.InternalDefinitions.SignalStateEventsAgent is disabled
+[2024/08/18 10:13:01.483 nodes] agent of type VeadoTube.Nodes.InternalDefinitions.ConstantNumberAgent is disabled
+[2024/08/18 10:13:01.483 wasapi] Микрофон (Realtek(R) Audio): lost id
+[2024/08/18 10:13:01.483 wasapi] Микрофон (Realtek(R) Audio): stopping task
+[2024/08/18 10:13:01.483 wasapi] Микрофон (Realtek(R) Audio): stopping capture
+[2024/08/18 10:13:01.486 wasapi] Микрофон (Realtek(R) Audio): destroying capture client
+[2024/08/18 10:13:01.486 wasapi] Микрофон (Realtek(R) Audio): destroying client
+[2024/08/18 10:13:01.487 wasapi] Микрофон (Realtek(R) Audio): disposing format
+[2024/08/18 10:13:01.487 wasapi] Микрофон (Realtek(R) Audio): destroying device
+[2024/08/18 10:13:01.487 wasapi] destroyed enumerator
+[2024/08/18 10:13:01.487 nodes] agent of type VeadoTube.Nodes.InternalDefinitions.MicrophoneWASAPIAgent is disabled
+[2024/08/18 10:13:01.487 nodes] agent of type VeadoTube.Nodes.InternalDefinitions.VoiceActivityOutputAgent is disabled
+[2024/08/18 10:13:01.487 modules] unloaded VeadoTube.Nodes.Module
+[2024/08/18 10:13:01.487 modules] unloading VeadoTube.Text.Language
+[2024/08/18 10:13:01.487 modules] unloaded VeadoTube.Text.Language
+[2024/08/18 10:13:01.487 modules] unloading VeadoTube.Data.AddOn
+[2024/08/18 10:13:01.487 modules] unloaded VeadoTube.Data.AddOn
+[2024/08/18 10:13:01.487 modules] unloading VeadoTube.Text.Emoji
+[2024/08/18 10:13:01.487 modules] unloaded VeadoTube.Text.Emoji
+[2024/08/18 10:13:01.487 modules] unloading VeadoTube.Text.Fonts
+[2024/08/18 10:13:01.498 modules] unloaded VeadoTube.Text.Fonts
+[2024/08/18 10:13:01.555 user data] unloaded WindowData
+[2024/08/18 10:13:01.555 instance] bye!

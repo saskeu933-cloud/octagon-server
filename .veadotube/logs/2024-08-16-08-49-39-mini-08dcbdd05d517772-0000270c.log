@@ -1,0 +1,441 @@
+﻿[2024.08.16 08:49:39.627 instance] hello!
+    application: "veadotube mini" (type "mini", version "2.0a")
+    instance id: mini-08dcbdd05d517772-0000270c
+    args: (none)
+    system: Windows x64
+    debug build: False
+    executable: "C:\Users\user\Downloads\veadotube-mini-win-x64\veadotube_mini.exe"
+    lib folder: "lib/"
+    app folder: "C:\Users\user\Downloads\veadotube-mini-win-x64"
+    user folder: "C:\Users\user\.veadotube"
+[2024.08.16 08:49:39.689 user data] created WindowData
+[2024.08.16 08:49:39.853 win32] "dx11" backend init success
+[2024.08.16 08:49:39.854 win/ime] locale: 00000409
+[2024.08.16 08:49:39.854 win/ime] api file name: ""
+[2024.08.16 08:49:39.854 win/ime] api GetReadingString: False
+[2024.08.16 08:49:39.854 win/ime] api ShowReadingWindow: False
+[2024.08.16 08:49:39.854 win/ime] ime is ready
+[2024.08.16 08:49:39.860 dx11] creating shaders...
+    vert Fill(0) -> success
+    frag Fill(0) -> success
+    vert FixAlpha(0) -> success
+    frag FixAlpha(0) -> success
+    vert MiniCustomSlider(0) -> success
+    frag MiniCustomSlider:ColorHue(0) -> success
+    frag MiniCustomSlider:ColorSaturation(0) -> success
+    frag MiniCustomSlider:ColorValue(0) -> success
+    vert MiniEffectsPreview(0) -> success
+    frag MiniEffectsPreview(0) -> success
+    vert MiniImagePreview(0) -> success
+    frag MiniImagePreview(0) -> success
+    vert MiniStateFrame(0) -> success
+    frag MiniStateFrame(0) -> success
+    vert MiniVolumeSlider(0) -> success
+    frag MiniVolumeSlider(0) -> success
+    vert Quad(0) -> success
+    vert Quad(1) -> success
+    vert Quad:Multiple(0) -> success
+    vert Quad:Multiple(1) -> success
+    frag Quad(0) -> success
+    frag Quad:Texture(0) -> success
+    frag Quad:Texture(1) -> success
+    frag Quad:TextureShade(0) -> success
+    frag Quad:TextureShade(1) -> success
+    frag Quad:Red(0) -> success
+    frag Quad:SDF(0) -> success
+    frag Quad:SDF2(0) -> success
+    vert RoundRect(0) -> success
+    frag RoundRect(0) -> success
+    frag RoundRect:Multiply(0) -> success
+    vert Line(0) -> success
+    frag Line(0) -> success
+    vert OutputFrame:Src1(0) -> success
+    vert OutputFrame:Src1(1) -> success
+    frag OutputFrame:Copy(0) -> success
+    frag OutputFrame:Blend(0) -> success
+    frag OutputFrame:Unmultiply(0) -> success
+    frag OutputFrame:UnmultiplyGrid(0) -> success
+    frag OutputFrame:Opacity(0) -> success
+    frag OutputFrame:OpacityNoise(0) -> success
+    frag OutputFrame:DropShadow(0) -> success
+    frag OutputFrame:MiniFadeDown(0) -> success
+[2024.08.16 08:49:40.161 modules] loading VeadoTube.Text.Fonts
+[2024.08.16 08:49:40.411 fonts] loaded from assets:
+    Default: 4 font(s)
+    Display: 2 font(s)
+    Mono: 2 font(s)
+    ...with 21 fallback font(s)!
+[2024.08.16 08:49:40.411 modules] loaded VeadoTube.Text.Fonts
+[2024.08.16 08:49:40.411 modules] loading VeadoTube.Text.Emoji
+[2024/08/16 08:49:40.563 modules] loaded VeadoTube.Text.Emoji
+[2024/08/16 08:49:40.563 modules] loading VeadoTube.Data.AddOn
+[2024/08/16 08:49:40.563 add-on] no add-ons found
+[2024/08/16 08:49:40.564 modules] loaded VeadoTube.Data.AddOn
+[2024/08/16 08:49:40.564 modules] loading VeadoTube.Text.Language
+[2024/08/16 08:49:40.564 language] available languages:
+    en: English
+    es: español
+    pt: português
+[2024/08/16 08:49:40.565 language] current language: en: English
+[2024/08/16 08:49:40.565 modules] loaded VeadoTube.Text.Language
+[2024/08/16 08:49:40.565 modules] loading VeadoTube.Nodes.Module
+[2024/08/16 08:49:40.565 nodes] available usages:
+    volume() -> (Num)
+    voiceActivity() -> (Bool)
+    audio() -> (Audio)
+    audio.newSamples() -> (Num)
+    bitmap() -> (Bitmap)
+    neural.silerovad() -> (Num, Num)
+    neural.ovrlipsync.viseme() -> (String)
+    neural.ovrlipsync.visemeScore(String) -> (Num)
+    neural.ovrlipsync.laughter() -> (Num)
+    number() -> (Num)
+    number2() -> (Num2)
+    unit() -> (Num)
+    realUnit() -> (Num)
+    point() -> (Num2)
+    boolean() -> (Bool)
+    string() -> (String)
+    state() -> (String)
+    color() -> (Color)
+    input.mouse(Num) -> (Bool)
+    input.keyboard(String) -> (Bool)
+    input.keyboard.all() -> (String)
+    input.gamepad.button(String) -> (Bool)
+    input.gamepad.buttonNum(String) -> (Num)
+    input.gamepad.stick(String) -> (Num2)
+    input.midi.note(Num) -> (Bool)
+    input.midi.noteVelocity(Num) -> (Num)
+    input.midi.controller(Num) -> (Num)
+    input.midi.pitchWheel() -> (Num)
+    stateStackEvents() -> (StateStackEvents)
+[2024/08/16 08:49:40.565 nodes] available nodes:
+    constant.number (number)
+    constant.boolean (boolean)
+    ipc.stateEvents (stateStackEvents)
+    input.microphone (audio)
+    input.webcam (bitmap)
+    voiceActivityOutput (voiceActivity)
+    neural.silerovad (neural.silerovad)
+    neural.ovrlipsync (neural.ovrlipsync)
+    neural.silerovad::silence (unit)
+    neural.silerovad::activity (unit)
+    neural.ovrlipsync::viseme (state)
+    neural.ovrlipsync::visemeScore (unit)
+    neural.ovrlipsync::laughter (unit)
+    input.cursor (point)
+    input.mouse (input.mouse)
+    input.keyboard (input.keyboard)
+    input.gamepad (input.gamepad)
+    input.midi (input.midi)
+    input.mouse::button (boolean)
+    input.keyboard::key (boolean)
+    input.gamepad::button (boolean, unit)
+    input.gamepad::stick (point)
+    input.midi::note (boolean, unit)
+    input.midi::controller (unit)
+    input.midi::pitchWheel (realUnit)
+    state.stack (state)
+    state.signalEvents (stateStackEvents)
+[2024/08/16 08:49:40.565 modules] loaded VeadoTube.Nodes.Module
+[2024/08/16 08:49:40.565 modules] loading VeadoTube.IPC
+[2024/08/16 08:49:40.565 modules] loaded VeadoTube.IPC
+[2024/08/16 08:49:40.568 user data] created DataFile
+[2024/08/16 08:49:40.568 mini data] created new data file
+[2024/08/16 08:49:40.568 mini data] attempting to load avatar from autosave
+[2024/08/16 08:49:40.568 mini data] couldn't find an avatar! loading the default one then
+[2024/08/16 08:49:40.572 user data] created VeadoFile:autosave
+[2024/08/16 08:49:40.573 mini data] avatar loaded
+[2024/08/16 08:49:40.581 nodes] agent of type StateStackAgent is enabled
+[2024/08/16 08:49:40.581 nodes] agent of type IPCStateEventsAgent is enabled
+[2024/08/16 08:49:40.581 nodes] agent of type MicrophoneWASAPIAgent is enabled
+[2024/08/16 08:49:40.581 node graph] rebuild graph components: 0.01810 ms
+[2024/08/16 08:49:40.581 nodes] agent of type SignalStateEventsAgent is enabled
+[2024/08/16 08:49:40.581 nodes] agent of type ConstantNumberAgent is enabled
+[2024/08/16 08:49:40.581 nodes] agent of type VoiceActivityOutputAgent is enabled
+[2024/08/16 08:49:40.581 node graph] rebuild node instances: 0.35050 ms
+[2024/08/16 08:49:40.584 wasapi] created enumerator
+[2024/08/16 08:49:40.585 wasapi] updating endpoint list
+[2024/08/16 08:49:40.586 ipc] serving at 127.0.0.1:58647
+[2024/08/16 08:49:40.598 node graph] rebuild node instances: 0.24420 ms
+[2024/08/16 08:49:40.598 wasapi] Микрофон (Realtek(R) Audio): new id is {0.0.1.00000000}.{87ac4758-7420-418d-b9fc-b66f2faa5c7f}
+[2024/08/16 08:49:40.598 wasapi] Микрофон (Realtek(R) Audio): created device
+[2024/08/16 08:49:40.601 wasapi] Микрофон (Realtek(R) Audio): created audio client
+[2024/08/16 08:49:40.602 wasapi] Микрофон (Realtek(R) Audio): mix format: FFFE, 2 ch, 48000 hz, 32 bpsample, 384000 bpsec, align 8
+    KSDATAFORMAT_SUBTYPE_IEEE_FLOAT, ch mask 0-1, 32 samples/block or bits/sample
+[2024/08/16 08:49:40.602 wasapi] Микрофон (Realtek(R) Audio): attempting compatibility (1 of 3): ok!
+    raw format: 0003, 2 ch, 48000 hz, 32 bpsample, 384000 bpsec, align 8
+[2024/08/16 08:49:40.602 wasapi] Микрофон (Realtek(R) Audio): chosen format: ch(Left, Right), 48000 hz, Float32LR
+[2024/08/16 08:49:40.622 wasapi] Микрофон (Realtek(R) Audio): initialized client
+[2024/08/16 08:49:40.622 wasapi] Микрофон (Realtek(R) Audio): fetched buffer size: 1056
+[2024/08/16 08:49:40.622 wasapi] Микрофон (Realtek(R) Audio): event handle is set
+[2024/08/16 08:49:40.622 wasapi] Микрофон (Realtek(R) Audio): created capture client
+[2024/08/16 08:49:40.623 wasapi] Микрофон (Realtek(R) Audio): started capture
+[2024/08/16 08:49:40.623 wasapi] Микрофон (Realtek(R) Audio): starting task
+[2024/08/16 08:49:42.651 text parser] reloading strings
+[2024/08/16 08:49:42.651 text files] reading en files from assets (3 file(s))
+[2024/08/16 08:49:42.651 yaml] deserialization took 0.3832 ms
+[2024/08/16 08:49:42.652 yaml] deserialization took 0.1032 ms
+[2024/08/16 08:49:42.652 yaml] deserialization took 0.1203 ms
+[2024/08/16 08:49:42.652 text files] reading en files from assets (3 file(s))
+[2024/08/16 08:49:42.652 yaml] deserialization took 0.3382 ms
+[2024/08/16 08:49:42.652 yaml] deserialization took 0.1085 ms
+[2024/08/16 08:49:42.653 yaml] deserialization took 0.159 ms
+[2024/08/16 08:49:45.582 user data] saving DataFile with UserDataFileAgent (mini/data.yaml)
+[2024/08/16 08:49:45.583 yaml] serialization took 0.1689 ms
+[2024/08/16 08:49:45.583 user data] saving VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 08:49:45.594 image exporter] exporting took 10.343 ms
+[2024/08/16 08:49:45.595 user data] save: success; DataFile with UserDataFileAgent (mini/data.yaml)
+[2024/08/16 08:49:45.595 user data] save: success; VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 08:49:47.664 user data] saving WindowData with UserDataFileAgent (mini/window.yaml)
+[2024/08/16 08:49:47.665 yaml] serialization took 0.0838 ms
+[2024/08/16 08:49:47.682 user data] save: success; WindowData with UserDataFileAgent (mini/window.yaml)
+[2024/08/16 08:54:47.910 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{55a502a5-b857-4dd0-bda2-620216e727cd} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 08:54:47.916 wasapi] updating endpoint list
+[2024/08/16 08:54:50.127 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{55a502a5-b857-4dd0-bda2-620216e727cd} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 08:54:50.142 wasapi] updating endpoint list
+[2024/08/16 09:00:05.044 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 09:00:05.055 wasapi] updating endpoint list
+[2024/08/16 09:04:06.696 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 09:04:06.697 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 1
+[2024/08/16 09:04:06.700 wasapi] updating endpoint list
+[2024/08/16 09:04:53.211 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 1
+[2024/08/16 09:04:53.217 wasapi] updating endpoint list
+[2024/08/16 09:04:53.787 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 09:04:53.798 wasapi] updating endpoint list
+[2024/08/16 09:13:19.824 user data] saving VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:13:19.831 image exporter] exporting took 6.485 ms
+[2024/08/16 09:13:19.844 user data] save: success; VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:13:42.955 user data] saving VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:13:42.962 image exporter] exporting took 5.856 ms
+[2024/08/16 09:13:42.973 user data] save: success; VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:13:47.240 image importer] available importers:
+    BMP (bmp, dib) [prefix: 42 4D]
+    PaintNET (pdn) [prefix: 50 44 4E 33 or 1F 8B]
+    FlipnoteKWZ (kwz) [prefix: 4B 46 48]
+    JPEG (jpg, jpeg, jfif) [prefix: FF D8 FF]
+    FlipnotePPM (ppm) [prefix: 50 41 52 41]
+    PSD (psd) [prefix: 38 42 50 53]
+    QOI (qoi) [prefix: 71 6F 69 66]
+    GIF (gif) [prefix: 47 49 46 38 37 61 or 47 49 46 38 39 61]
+    IPV (ipv) [prefix: 01 00 01 00 00 00 00]
+    MDP (mdp) [prefix: 6D 64 69 70 61 63 6B]
+    Clip (clip) [prefix: 43 53 46 43 48 55 4E 4B]
+    PNG (png) [prefix: 89 50 4E 47 0D 0A 1A 0A]
+    WebP (webp) [prefix: 52 49 46 46 xx xx xx xx 57 45 42 50]
+    SAI2 (sai2) [prefix: 53 41 49 2D 43 41 4E 56 41 53 2D 54 59 50 45 30]
+    SAI (sai) []
+[2024/08/16 09:13:50.273 image importer] identifying file: 0.02940 ms
+[2024/08/16 09:13:50.273 image importer] preparing PNG file: 0.06010 ms
+[2024/08/16 09:13:50.293 image importer] importing PNG file: 20.29370 ms
+[2024/08/16 09:13:55.321 user data] saving VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:13:55.331 image exporter] exporting took 8.540 ms
+[2024/08/16 09:13:55.339 user data] save: success; VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:14:13.039 image exporter] exporting took 50.395 ms
+[2024/08/16 09:14:22.438 image importer] identifying file: 0.00990 ms
+[2024/08/16 09:14:22.438 image importer] preparing PNG file: 0.01300 ms
+[2024/08/16 09:14:22.476 image importer] importing PNG file: 38.36560 ms
+[2024/08/16 09:14:27.504 user data] saving VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:14:27.516 image exporter] exporting took 9.582 ms
+[2024/08/16 09:14:27.522 user data] save: success; VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:14:28.221 image importer] identifying file: 0.01750 ms
+[2024/08/16 09:14:28.222 image importer] preparing PNG file: 0.03580 ms
+[2024/08/16 09:14:28.262 image importer] importing PNG file: 40.42870 ms
+[2024/08/16 09:14:33.272 user data] saving VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:14:33.284 image exporter] exporting took 10.499 ms
+[2024/08/16 09:14:33.290 user data] save: success; VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:14:49.006 user data] saving VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:14:49.017 image exporter] exporting took 8.662 ms
+[2024/08/16 09:14:49.023 user data] save: success; VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:20:37.282 user data] saving VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:20:37.295 image exporter] exporting took 11.788 ms
+[2024/08/16 09:20:37.299 user data] save: success; VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:20:45.965 image importer] identifying file: 0.01550 ms
+[2024/08/16 09:20:45.965 image importer] preparing PNG file: 0.03630 ms
+[2024/08/16 09:20:45.997 image importer] importing PNG file: 32.26340 ms
+[2024/08/16 09:20:51.031 user data] saving VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:20:51.039 image exporter] exporting took 7.398 ms
+[2024/08/16 09:20:51.049 user data] save: success; VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:20:52.114 image importer] identifying file: 0.00930 ms
+[2024/08/16 09:20:52.114 image importer] preparing PNG file: 0.02650 ms
+[2024/08/16 09:20:52.159 image importer] importing PNG file: 44.34820 ms
+[2024/08/16 09:20:57.198 user data] saving VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:20:57.209 image exporter] exporting took 9.739 ms
+[2024/08/16 09:20:57.233 user data] save: success; VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:28:18.590 image importer] identifying file: 0.01780 ms
+[2024/08/16 09:28:18.590 image importer] preparing PNG file: 0.02950 ms
+[2024/08/16 09:28:18.621 image importer] importing PNG file: 31.37050 ms
+[2024/08/16 09:28:23.640 user data] saving VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:28:23.643 image exporter] exporting took 2.900 ms
+[2024/08/16 09:28:23.658 user data] save: success; VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:29:31.273 user data] saving VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:29:31.280 image exporter] exporting took 5.895 ms
+[2024/08/16 09:29:31.291 user data] save: success; VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:29:41.855 image importer] identifying file: 0.00960 ms
+[2024/08/16 09:29:41.855 image importer] preparing PNG file: 0.01380 ms
+[2024/08/16 09:29:41.892 image importer] importing PNG file: 36.57520 ms
+[2024/08/16 09:29:46.906 user data] saving VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:29:46.916 image exporter] exporting took 9.014 ms
+[2024/08/16 09:29:46.924 user data] save: success; VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:30:04.105 image importer] identifying file: 0.00950 ms
+[2024/08/16 09:30:04.105 image importer] preparing PNG file: 0.01710 ms
+[2024/08/16 09:30:04.147 image importer] importing PNG file: 42.37290 ms
+[2024/08/16 09:30:09.155 user data] saving VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:30:09.162 image exporter] exporting took 4.990 ms
+[2024/08/16 09:30:09.174 user data] save: success; VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:30:15.688 image importer] identifying file: 0.00890 ms
+[2024/08/16 09:30:15.688 image importer] preparing PNG file: 0.01330 ms
+[2024/08/16 09:30:15.714 image importer] importing PNG file: 26.02040 ms
+[2024/08/16 09:30:20.722 user data] saving VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:30:20.731 image exporter] exporting took 7.879 ms
+[2024/08/16 09:30:20.741 user data] save: success; VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:30:23.988 image importer] identifying file: 0.00770 ms
+[2024/08/16 09:30:23.988 image importer] preparing PNG file: 0.01590 ms
+[2024/08/16 09:30:24.010 image importer] importing PNG file: 22.37880 ms
+[2024/08/16 09:30:29.037 user data] saving VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:30:29.043 image exporter] exporting took 5.040 ms
+[2024/08/16 09:30:29.056 user data] save: success; VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:32:15.836 user data] saving VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:32:15.847 image exporter] exporting took 8.968 ms
+[2024/08/16 09:32:15.854 user data] save: success; VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:32:27.636 image importer] identifying file: 0.02200 ms
+[2024/08/16 09:32:27.636 image importer] preparing PNG file: 0.04300 ms
+[2024/08/16 09:32:27.668 image importer] importing PNG file: 32.39130 ms
+[2024/08/16 09:32:32.703 user data] saving VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:32:32.711 image exporter] exporting took 7.302 ms
+[2024/08/16 09:32:32.720 user data] save: success; VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:32:36.102 image importer] identifying file: 0.00830 ms
+[2024/08/16 09:32:36.102 image importer] preparing PNG file: 0.02600 ms
+[2024/08/16 09:32:36.144 image importer] importing PNG file: 41.56710 ms
+[2024/08/16 09:32:41.169 user data] saving VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:32:41.175 image exporter] exporting took 5.619 ms
+[2024/08/16 09:32:41.189 user data] save: success; VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:33:11.238 user data] saving VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:33:11.246 image exporter] exporting took 7.168 ms
+[2024/08/16 09:33:11.253 user data] save: success; VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:36:24.099 image importer] identifying file: 0.01150 ms
+[2024/08/16 09:36:24.099 image importer] preparing PNG file: 0.02810 ms
+[2024/08/16 09:36:24.131 image importer] importing PNG file: 32.86510 ms
+[2024/08/16 09:36:29.149 user data] saving VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:36:29.160 image exporter] exporting took 10.324 ms
+[2024/08/16 09:36:29.166 user data] save: success; VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:36:29.399 image importer] identifying file: 0.01010 ms
+[2024/08/16 09:36:29.399 image importer] preparing PNG file: 0.03200 ms
+[2024/08/16 09:36:29.445 image importer] importing PNG file: 46.44880 ms
+[2024/08/16 09:36:34.481 user data] saving VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:36:34.488 image exporter] exporting took 6.700 ms
+[2024/08/16 09:36:34.499 user data] save: success; VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:36:45.249 image importer] identifying file: 0.02850 ms
+[2024/08/16 09:36:45.249 image importer] preparing PNG file: 0.10480 ms
+[2024/08/16 09:36:45.284 image importer] importing PNG file: 34.94910 ms
+[2024/08/16 09:36:50.314 user data] saving VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 09:36:50.322 image exporter] exporting took 7.421 ms
+[2024/08/16 09:36:50.332 user data] save: success; VeadoFile:autosave with UserDataFileAgent (mini/autosave.veado)
+[2024/08/16 10:11:58.076 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 10:11:58.087 wasapi] updating endpoint list
+[2024/08/16 10:17:54.250 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 10:17:54.257 wasapi] updating endpoint list
+[2024/08/16 10:32:11.437 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 10:32:11.442 wasapi] updating endpoint list
+[2024/08/16 10:38:48.876 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 10:38:48.886 wasapi] updating endpoint list
+[2024/08/16 11:06:50.403 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 11:06:50.408 wasapi] updating endpoint list
+[2024/08/16 11:35:02.789 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 11:35:02.795 wasapi] updating endpoint list
+[2024/08/16 11:46:31.606 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 11:46:31.617 wasapi] updating endpoint list
+[2024/08/16 11:48:02.438 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 11:48:02.449 wasapi] updating endpoint list
+[2024/08/16 11:49:50.198 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 11:49:50.214 wasapi] updating endpoint list
+[2024/08/16 12:03:25.198 user data] saving WindowData with UserDataFileAgent (mini/window.yaml)
+[2024/08/16 12:03:25.199 yaml] serialization took 0.1633 ms
+[2024/08/16 12:03:25.232 user data] save: success; WindowData with UserDataFileAgent (mini/window.yaml)
+[2024/08/16 13:08:15.751 user data] saving WindowData with UserDataFileAgent (mini/window.yaml)
+[2024/08/16 13:08:15.752 yaml] serialization took 0.1109 ms
+[2024/08/16 13:08:15.793 user data] save: success; WindowData with UserDataFileAgent (mini/window.yaml)
+[2024/08/16 13:30:38.644 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 13:30:38.647 wasapi] updating endpoint list
+[2024/08/16 13:30:54.762 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 13:30:54.763 wasapi] updating endpoint list
+[2024/08/16 13:45:36.826 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 13:45:36.831 wasapi] updating endpoint list
+[2024/08/16 14:07:07.884 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 14:07:07.893 wasapi] updating endpoint list
+[2024/08/16 14:24:30.708 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 14:24:30.711 wasapi] updating endpoint list
+[2024/08/16 14:33:19.990 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 14:33:19.999 wasapi] updating endpoint list
+[2024/08/16 14:51:38.204 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 14:51:38.214 wasapi] updating endpoint list
+[2024/08/16 14:51:39.509 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 14:51:39.514 wasapi] updating endpoint list
+[2024/08/16 14:51:40.749 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 14:51:40.764 wasapi] updating endpoint list
+[2024/08/16 14:52:02.108 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 14:52:02.114 wasapi] updating endpoint list
+[2024/08/16 14:52:12.279 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 14:52:12.280 wasapi] updating endpoint list
+[2024/08/16 14:53:58.321 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 14:53:58.329 wasapi] updating endpoint list
+[2024/08/16 14:58:57.903 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 14:58:57.907 wasapi] updating endpoint list
+[2024/08/16 15:05:48.464 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 15:05:48.468 wasapi] updating endpoint list
+[2024/08/16 15:06:46.004 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 15:06:46.016 wasapi] updating endpoint list
+[2024/08/16 15:07:37.904 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 15:07:37.916 wasapi] updating endpoint list
+[2024/08/16 15:29:12.779 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 15:29:12.795 wasapi] updating endpoint list
+[2024/08/16 15:38:00.538 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 15:38:00.552 wasapi] updating endpoint list
+[2024/08/16 15:38:11.383 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 15:38:11.387 wasapi] updating endpoint list
+[2024/08/16 15:38:53.670 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 15:38:53.684 wasapi] updating endpoint list
+[2024/08/16 15:40:54.516 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 15:40:54.517 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 1
+[2024/08/16 15:40:54.533 wasapi] updating endpoint list
+[2024/08/16 17:20:24.754 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 1
+[2024/08/16 17:20:24.768 wasapi] updating endpoint list
+[2024/08/16 17:20:25.798 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 17:20:25.801 wasapi] updating endpoint list
+[2024/08/16 17:25:02.856 user data] saving WindowData with UserDataFileAgent (mini/window.yaml)
+[2024/08/16 17:25:02.857 yaml] serialization took 0.1485 ms
+[2024/08/16 17:25:02.888 user data] save: success; WindowData with UserDataFileAgent (mini/window.yaml)
+[2024/08/16 17:26:11.685 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 17:26:11.716 wasapi] updating endpoint list
+[2024/08/16 17:26:43.614 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 17:26:43.646 wasapi] updating endpoint list
+[2024/08/16 17:33:08.938 user data] saving WindowData with UserDataFileAgent (mini/window.yaml)
+[2024/08/16 17:33:08.939 yaml] serialization took 0.1049 ms
+[2024/08/16 17:33:08.958 user data] save: success; WindowData with UserDataFileAgent (mini/window.yaml)
+[2024/08/16 18:02:24.340 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 18:02:24.357 wasapi] updating endpoint list
+[2024/08/16 18:08:47.867 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 18:08:47.884 wasapi] updating endpoint list
+[2024/08/16 19:01:24.313 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 19:01:24.317 wasapi] updating endpoint list
+[2024/08/16 19:02:06.968 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 19:02:06.981 wasapi] updating endpoint list
+[2024/08/16 20:53:05.449 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 20:53:05.455 wasapi] updating endpoint list
+[2024/08/16 20:53:07.724 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 20:53:07.739 wasapi] updating endpoint list
+[2024/08/16 21:04:37.974 user data] saving WindowData with UserDataFileAgent (mini/window.yaml)
+[2024/08/16 21:04:37.976 yaml] serialization took 1.382 ms
+[2024/08/16 21:04:38.015 user data] save: success; WindowData with UserDataFileAgent (mini/window.yaml)
+[2024/08/16 21:14:00.155 user data] saving WindowData with UserDataFileAgent (mini/window.yaml)
+[2024/08/16 21:14:00.155 yaml] serialization took 0.0433 ms
+[2024/08/16 21:14:00.187 user data] save: success; WindowData with UserDataFileAgent (mini/window.yaml)
+[2024/08/16 21:14:12.017 user data] saving WindowData with UserDataFileAgent (mini/window.yaml)
+[2024/08/16 21:14:12.018 yaml] serialization took 0.0255 ms
+[2024/08/16 21:14:12.035 user data] save: success; WindowData with UserDataFileAgent (mini/window.yaml)
+[2024/08/16 21:43:21.733 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 21:43:21.739 wasapi] updating endpoint list
+[2024/08/16 21:53:15.582 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 21:53:15.596 wasapi] updating endpoint list
+[2024/08/16 21:55:47.423 wasapi] event OnPropertyValueChanged: {0.0.0.00000000}.{f9747cc1-097c-4d06-b13d-ad3b06851b7a} 9855c4cd-df8c-449c-a181-8191b68bd06c 0
+[2024/08/16 21:55:47.428 wasapi] updating endpoint list
