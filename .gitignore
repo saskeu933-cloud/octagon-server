@@ -1,0 +1,9 @@
+node_modules/
+.vscode/
+.cache/
+.openjfx/
+.oracle_jre_usage/
+.veadotube/
+MediaGet2/
+Intel/
+*.txt
