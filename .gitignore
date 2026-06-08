@@ -7,3 +7,9 @@ node_modules/
 MediaGet2/
 Intel/
 *.txt
+.vscode-shared/
+.node_repl_history
+ex-list
+gitignore
+server.txt
+*.txt
