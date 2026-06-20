@@ -180,6 +180,49 @@ app.get('/updateItem', (req, res) => {
     );
 
 });
+// случайный предмет
+app.get('/randomItem', (req, res) => {
+
+    connection.query(
+        'SELECT * FROM Items ORDER BY RAND() LIMIT 1',
+        (err, results) => {
+
+            if (err || results.length === 0) {
+                return res.json(null);
+            }
+
+            res.json(results[0]);
+        }
+    );
+
+});
+
+// предмет по ID
+app.get('/getItemByID', (req, res) => {
+
+    const id = Number(req.query.id);
+
+    if (
+        req.query.id === undefined ||
+        isNaN(id)
+    ) {
+        return res.json(null);
+    }
+
+    connection.query(
+        'SELECT * FROM Items WHERE id = ?',
+        [id],
+        (err, results) => {
+
+            if (err || results.length === 0) {
+                return res.json(null);
+            }
+
+            res.json(results[0]);
+        }
+    );
+
+});
 app.listen(3000, () => {
     console.log('Сервер запущен на порту 3000');
 });
