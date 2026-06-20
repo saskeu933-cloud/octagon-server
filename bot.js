@@ -6,18 +6,35 @@ const bot = new TelegramBot(token, {
     polling: true
 });
 
+// старт
 bot.onText(/\/start/, (msg) => {
+    bot.sendMessage(msg.chat.id, 'Привет, октагон!');
+});
+
+// help
+bot.onText(/\/help/, (msg) => {
     bot.sendMessage(
         msg.chat.id,
-        'Привет, октагон!'
+        '/site - ссылка на сайт Октагона\n' +
+        '/creator - информация о создателе'
     );
 });
 
-bot.on('polling_error', (err) => {
-    console.log(err);
+// site
+bot.onText(/\/site/, (msg) => {
+    bot.sendMessage(
+        msg.chat.id,
+        'https://octagon.media/'
+    );
 });
 
-bot.getMe()
-    .then(console.log)
-    .catch(console.error);
-    
+// creator
+bot.onText(/\/creator/, (msg) => {
+    bot.sendMessage(
+        msg.chat.id,
+        'Тимофеев Иван Романович'
+    );
+});
+
+// ошибки
+bot.on('polling_error', console.log);
